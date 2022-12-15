@@ -1,0 +1,4 @@
+reset;
+model LKAB.mod;
+data LKAB.dat;
+solve;

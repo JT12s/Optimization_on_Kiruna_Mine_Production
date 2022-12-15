@@ -49,7 +49,7 @@ var y{a in A, t in T} binary;
 minimize Total:sum{k in K,t in T} p[t]*(bz[k,t]+az[k,t]);
 
 #constraint
-subject to two{k in K,t in T}:sum{a in At[t], t1 in Ta[a]:t1<=t}r[a,t1,t,k]*y[a,t1]+sum{b in Bt[t]}(R[b,k]*x[b,t]/(sum{k1 in K}R[b,k1])+bz[k,t]-az[b,t])=d[k,t];
+subject to two{k in K,t in T3}:sum{a in At[t], t1 in Ta[a]:t1<=t}r[a,t1,t,k]*y[a,t1]+sum{b in Bt[t]}(R[b,k]*x[b,t]/(sum{k1 in K}R[b,k1])+bz[k,t]-az[k,t])=d[k,t];
 subject to three{t in T1}:sum{a in At[t],k in K,t1 in Ta[a]:t1<=t}r[a,t1,t,k]*y[a,t1]+sum{b in Bt[t]}x[b,t]=sum{k in K}d[k,t];
 subject to four{v in V, l in L, t in Tl[l],t2 in T2[l]}:sum{a in(Av[v] inter At[t2]),t1 in Ta[a]:t1<=t}g[a,t1,t]*y[a,t1]+sum{a in Av[v],ll in (La[a] inter Lt[t])} (1-w[ll,t2])<=LHDv[v];
 subject to five {t in T}:sum{a in (IA inter At[t])} y[a,t]<=LHDt[t];

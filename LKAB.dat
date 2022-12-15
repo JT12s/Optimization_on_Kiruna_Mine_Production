@@ -1,0 +1,133 @@
+#Sets#
+set K:= A B C;
+set V:= A B C;
+set A:= A B C;
+set T:= 1 2 3;
+set L:= 1 2 3;
+set Av[A]:= A;
+set Av[B]:= B;
+set Av[C]:= C;
+set IA:=;
+set AVa[A]:= B;	
+set AVa[B]:= A C;
+set AVa[C]:= ;
+set AHa[A]:=;
+set AHa[B]:=;
+set AHa[C]:=;
+set At[1]:= A;
+set At[2]:= B;
+set At[3]:= C;
+set B:= 1 2 3 4;
+set Ba[A]:= 1 2;
+set Ba[B]:= 3;
+set Ba[C]:= 4;
+set Bl[1]:= 1 2 3 4;
+set Bl[2]:=;
+set Bl[3]:=;
+set Bt[1]:= 1 2;
+set Bt[2]:= 3;
+set Bt[3]:= 4;
+set La[A]:= 1 2;
+set La[B]:= ;
+set La[C]:= 3;
+set LC:= 2;
+set Ll[1]:= 3;
+set LVa[B]:= 1 2 3;
+set LVa[A]:=;
+set LVa[C]:=;
+set LHa[C]:= 1 2 3;
+set Lt[1]:= 1;
+set Lt[2]:= 2;
+set Lt[3]:= 3;
+set T3:= 3;
+set T1:= 1 2;
+set Ta[A]:= 1;
+set Ta[B]:= 2;
+set Ta[C]:= 3;
+set Tb[1]:= 2 3;
+set Tb[2]:= 1;
+set Tb[3]:=;
+set Tb[4]:=;
+set Tl[1]:= 1;
+set Tl[2]:= 2;
+set Tl[3]:= 3;
+set T2[1]:= 3;
+set T2[2]:= 2;
+set T2[3]:= 1;
+
+
+
+#Parameters#
+param LHDt:=1 10
+2 10
+3 10;
+
+param LHDv:=A 7
+B 6
+C 6;
+
+param d:= A 1 30
+A 2 30
+A 3 30
+B 1 50
+B 2 50
+B 3 50
+C 1 100
+C 2 100
+C 3 100;
+
+#it gonna be really long to write all of it
+param r:= A 1 1 A 20
+A 1 1 B 30
+A 1 1 C 50
+B 2 2 A 8
+B 2 2 B 17
+B 2 2 C 40
+C 3 3 A 10
+C 3 3 B 10
+C 3 3 C 10;
+
+param g:=A 1 1 1
+A 2 1 0
+A 1 2 0
+A 1 3 1
+B 2 2 1;
+
+param R:= 1 A 4
+1 B 7
+1 C 8
+2 A 3
+2 B 9
+2 C 4
+3 A 9
+3 B 10
+3 C 13
+4 A 2
+4 B 4
+4 C 15;
+
+param Maxc:= A 1 10
+A 2 10
+A 3 10
+B 1 13 
+B 2 13
+B 3 13
+C 1 10
+C 2 10
+C 3 10;
+
+param Minc:= A 1 0
+A 2 0
+A 3 0
+B 1 0 
+B 2 0
+B 3 0
+C 1 0
+C 2 0
+C 3 0;
+
+
+
+
+
+
