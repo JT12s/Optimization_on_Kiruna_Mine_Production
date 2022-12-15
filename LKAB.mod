@@ -1,4 +1,3 @@
-# EX:a1=a^'  ;a2=a^⋀;a3=a^~
 #Sets#
 set K;                       #set of ore grades
 set V;                       #set of shaft groups
@@ -62,7 +61,7 @@ subject to eleven{a in A,a3 in AV[a],l in LV[a],t in T[a3]}:w[l,t]>=y[a3,t];
 subject to twelve{a in A,a3 in AH[a],l in LH[a],t2 in T[l]}:sum{t in T[a3]:t<=t2}y[a3,t]>=w[l,t2];
 subject to thirteen{a in A,a2 in AV[a],t2 in T[a2]:a2<>a}:sum{t in T[a]}y[a,t]>=y[a2,t2];
 subject to fourteen{a in A,a1 in AH[a],t in T[a]:a1<>a}:sum{t1 in T[a1]}y[a1,t1]>=y[a,t];
-subject to fifteen{a in A,
+#subject to fifteen{a in A,
 
 
 
