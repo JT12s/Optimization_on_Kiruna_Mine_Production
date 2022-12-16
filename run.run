@@ -1,4 +1,11 @@
 reset;
+
 model LKAB.mod;
+
 data LKAB.dat;
+
+option solver gurobi;
+
 solve;
+
+display az, bz, x, w, y;

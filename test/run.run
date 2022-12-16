@@ -1,0 +1,11 @@
+reset;
+
+model VRmod.mod;
+
+data VRdat.dat;
+
+option solver cplex;
+
+solve;
+
+display x, y, a, u;
