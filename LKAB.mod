@@ -1,3 +1,14 @@
+# Final Project - Group 7 - Gamjiarjenaki Mohammadreza, Smith Arik, Wenwen Sun, Jie Tang
+# SYS 6003 - Fall 2022
+# LKAB¡¯s Kiruna Mine Production Schduling
+
+#MOD FILE#
+
+# Use the following command to load and run the optimization for LKAB problem.
+# include run.run;
+
+# It will output a schdule of mine production on deviation, demand, order and start time.
+ 
 #Sets#
 set K;                       #set of ore grades
 set V;                       #set of shaft groups
@@ -19,7 +30,7 @@ set Ll{l in L} within L;      #set set of drawdown lines that vertically constra
 set LVa{a in A} within L;     #drawdown line whose finish date vertically restricts starting to mine machine placement a
 set LHa{a in A} within L;     #drawdown line whose finish date forces the start date of machine placement a by adjacency
 set Lt{t in T} within L;      #set of drawdown lines that can be mined in time period t
-set T3 in T;                 # T3 is the complement thereof for T
+set T3 in T;                 # set of time periods composing the long-term time horizon
 set T1 within T;             #set of time periods composing the short-term time horizon
 set Ta{a in A} within T;      #set of time periods in which machine placement a can start to be mined (restricted by machine placement location and the start dates of other relevant machine placements)        
 set Tb{b in B} within T;      #set of time periods in which production block b can be mined (restricted by production block location and the start dates of other relevant production blocks)
